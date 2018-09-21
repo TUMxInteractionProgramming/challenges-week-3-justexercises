@@ -166,34 +166,37 @@ h1 {
     height: 60px;
     line-height: 60px;
     font-size: 20px;
-    /* font-size: medium; */
     letter-spacing: 0.15px;
-    text-indent: 60px;
+    vertical-align: middle;
 }
 
+/* channels header image, not cool */
 h1 img {
-    vertical-align: middle;
-    display: block;
-    position: absolute;
-    bottom: 0px;
+    position: relative;
+    display: inline-block;
     left: 10px;
-    padding: 0px 10px;
+    top: 8px;
+    float: left;
+    margin-right: 8px;
 }
 
 /* scroll on channels */
 #channels{
     overflow: auto;
 }
-.channel-meta {
 
+/* channels star an arrow position */
+.channel-meta {
     position: absolute;
     right: 0px;
     vertical-align: middle;
 }
+
 .bar{
     display: flex;
 }
 
+/* chat buttons inside white area*/
 .message button {
     position: relative;
     /* display: inline; */
@@ -203,12 +206,14 @@ h1 img {
 
 }
 
+/* scroll bar for #chat area */
 #chat{
     overflow: auto;
     overflow-x: hidden;
     /* overflow-wrap:  */
 }
 
+/* chat bar star settings*/
 #chat img{
     position: relative;
     float:right;
@@ -216,6 +221,7 @@ h1 img {
     right: 16px;
 }
 
+/* emojis button*/
 .bar #emojis-button {
     /* justify-content: left; */
     display: flex;
@@ -223,6 +229,7 @@ h1 img {
     align-items: center;
 }
 
+/* emojis box style */
 #emojis{
     display: none;
     position: absolute;
@@ -239,6 +246,7 @@ h1 img {
     overflow: auto;
 }
 
+/* text of chat matadata, not nice*/
 .message h3 {
     display: flex;
     justify-content: space-between;
